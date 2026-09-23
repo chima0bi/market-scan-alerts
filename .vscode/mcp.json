@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "crypto-market-mcp": {
+      "type": "stdio",
+      "command": "npm",
+      "args": ["run", "dev"]
+    }
+  }
+}

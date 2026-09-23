@@ -1,0 +1,30 @@
+{
+  "pairs": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT",
+    "AVAXUSDT",
+    "ADAUSDT",
+    "SOLUSDT",
+    "LINKUSDT",
+    "DOGEUSDT",
+    "DOTUSDT",
+    "NEARUSDT"
+  ],
+  "timeframes": [
+    "D",
+    "240",
+    "60",
+    "15",
+    "5"
+  ],
+  "category": "linear",
+  "candlesPerTimeframe": 120,
+  "cycleSeconds": 2700,
+  "cooldownMinutes": 45,
+  "minConfluenceScore": 2,
+  "maxConcurrentPairs": 5,
+  "requestDelaySeconds": 0.25,
+  "useLlmSynthesis": true,
+  "llmModel": "claude-sonnet-4-6"
+}

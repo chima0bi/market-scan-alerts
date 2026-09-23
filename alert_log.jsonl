@@ -1,0 +1,16 @@
+{"ts":"2026-09-23T11:43:56.917Z","pair":"ETHUSDT","direction":"bearish","ruleBasedScore":2,"confirmingTimeframes":["60","15"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:43:57.043Z","pair":"BTCUSDT","direction":"bearish","ruleBasedScore":2,"confirmingTimeframes":["240","60"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:43:57.296Z","pair":"XRPUSDT","direction":"bearish","ruleBasedScore":3,"confirmingTimeframes":["240","60","15"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:43:57.432Z","pair":"ADAUSDT","direction":"bearish","ruleBasedScore":2,"confirmingTimeframes":["240","60"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:44:02.780Z","pair":"DOTUSDT","direction":"bearish","ruleBasedScore":2,"confirmingTimeframes":["D","60"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:44:03.040Z","pair":"DOGEUSDT","direction":"bearish","ruleBasedScore":3,"confirmingTimeframes":["D","240","60"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:44:03.321Z","pair":"SOLUSDT","direction":"bearish","ruleBasedScore":2,"confirmingTimeframes":["60","15"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:46:04.055Z","pair":"LINKUSDT","direction":"bullish","ruleBasedScore":2,"confirmingTimeframes":["D","5"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:47:57.468Z","pair":"AVAXUSDT","direction":"bullish","ruleBasedScore":2,"confirmingTimeframes":["240","15"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:47:57.775Z","pair":"ETHUSDT","direction":"bullish","ruleBasedScore":2,"confirmingTimeframes":["240","5"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T11:48:03.607Z","pair":"NEARUSDT","direction":"bullish","ruleBasedScore":3,"confirmingTimeframes":["240","15","5"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T12:04:20.813Z","pair":"AVAXUSDT","direction":"bearish","ruleBasedScore":5,"confirmingTimeframes":["D","240","60","15","5"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T12:04:23.279Z","pair":"LINKUSDT","direction":"bearish","ruleBasedScore":2,"confirmingTimeframes":["15","5"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T12:06:08.609Z","pair":"ADAUSDT","direction":"bullish","ruleBasedScore":2,"confirmingTimeframes":["D","5"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T12:10:14.506Z","pair":"DOGEUSDT","direction":"bullish","ruleBasedScore":3,"confirmingTimeframes":["240","60","15"],"alertWorthy":true,"verdict":null}
+{"ts":"2026-09-23T12:16:14.939Z","pair":"SOLUSDT","direction":"bullish","ruleBasedScore":2,"confirmingTimeframes":["15","5"],"alertWorthy":true,"verdict":null}
