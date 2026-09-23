@@ -13,7 +13,13 @@ export class BybitMarketClient implements MarketDataProvider {
     const url = new URL(path, this.baseUrl);
     Object.entries(params).forEach(([key, value]) => url.searchParams.set(key, String(value)));
     const response = await this.fetchImpl(url, { headers: { accept: 'application/json' } });
-    if (!response.ok) throw new MarketDataError(`Bybit HTTP error ${response.status}`, response.status);
+    if (!response.ok) {
+      const body = (await response.text()).replace(/\s+/g, ' ').slice(0, 300);
+      throw new MarketDataError(
+        `Bybit HTTP error ${response.status}${body ? `: ${body}` : ''}`,
+        response.status,
+      );
+    }
     const body = await response.json() as BybitEnvelope<T>;
     if (body.retCode !== 0) throw new MarketDataError(`Bybit API error: ${body.retMsg}`, response.status, { retCode: body.retCode });
     return body;

@@ -12,7 +12,7 @@ const envSchema = z.object({
     .regex(/^[A-Z0-9]+$/)
     .default('NEARUSDT'),
   DEFAULT_CATEGORY: z.enum(['spot', 'linear', 'inverse', 'option']).default('linear'),
-  HTTP_HOST: z.string().default(process.env.RENDER ? '0.0.0.0' : '127.0.0.1'),
+  HTTP_HOST: z.string().default('0.0.0.0'),
   HTTP_PORT: z.coerce
     .number()
     .int()
