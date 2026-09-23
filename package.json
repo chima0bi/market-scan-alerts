@@ -12,6 +12,7 @@
     "start": "node dist/src/index.js",
     "scan": "tsx src/scanner/runScanner.ts",
     "scan:start": "node dist/src/scanner/runScanner.js",
+    "hosted:start": "node dist/src/hosted.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",

@@ -100,6 +100,22 @@ npm run scan          # dev mode (tsx), or: npm run build && npm run scan:start
   closed-candle directional trigger, an unmitigated entry zone, an
   invalidation level, and at least one opposing confirmed swing target.
 
+## Hosted scanner service
+
+For a host that requires an HTTP service, the combined entry point runs the
+HTTP health/webhook server and the scanner in one process:
+
+```powershell
+npm run build
+npm run hosted:start
+```
+
+Set `HTTP_HOST=0.0.0.0` and `HTTP_PORT` to the host-provided port (Render
+provides `PORT`) when configuring another platform. Render automatically uses
+`0.0.0.0` and `PORT` when its `RENDER` environment variable is present. The
+health check is `GET /health`; use `npm run hosted:start` as the Render start
+command after `npm run build`.
+
 ## Limitations and future work
 
 Definitions are heuristic and can create false positives. Public data can be delayed or stale, and TradingView alerts are user-supplied events rather than exchange truth. No strategy guarantees profitability. Version 1 has no execution capability. Future adapters can implement Binance, OKX, Coinbase, or Hyperliquid behind `MarketDataProvider`; persistence, backtesting, dashboards, and notifications can be added without coupling them to the MCP tools.

@@ -7,10 +7,18 @@ const envSchema = z.object({
   BYBIT_TESTNET: z.coerce.boolean().default(false),
   BYBIT_BASE_URL: z.string().url().default('https://api.bybit.com'),
   TRADINGVIEW_WEBHOOK_SECRET: z.string().min(8).default('change_me'),
-  DEFAULT_SYMBOL: z.string().regex(/^[A-Z0-9]+$/).default('NEARUSDT'),
+  DEFAULT_SYMBOL: z
+    .string()
+    .regex(/^[A-Z0-9]+$/)
+    .default('NEARUSDT'),
   DEFAULT_CATEGORY: z.enum(['spot', 'linear', 'inverse', 'option']).default('linear'),
-  HTTP_HOST: z.string().default('127.0.0.1'),
-  HTTP_PORT: z.coerce.number().int().min(1).max(65535).default(8787),
+  HTTP_HOST: z.string().default(process.env.RENDER ? '0.0.0.0' : '127.0.0.1'),
+  HTTP_PORT: z.coerce
+    .number()
+    .int()
+    .min(1)
+    .max(65535)
+    .default(process.env.PORT ? Number(process.env.PORT) : 8787),
   LOG_LEVEL: z.enum(['debug', 'info', 'warn', 'error']).default('info'),
   STALE_DATA_THRESHOLD_MS: z.coerce.number().int().positive().default(30000),
   ALERT_RETENTION: z.coerce.number().int().positive().max(10000).default(100),
